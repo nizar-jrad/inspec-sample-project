@@ -34,7 +34,7 @@ pipeline {
                                 userRemoteConfigs: [[url: baseline.project]]
                             ])
                             
-                            //try {
+                            try {
                                 if(server.remote){
                                     sh "inspec exec \
                                         --chef-license accept-silent \
@@ -48,11 +48,11 @@ pipeline {
                                         --reporter cli junit:artifacts/${baseline.dir}-${server.ip}.xml"
                                 }
                                 
-                            //} catch (Exception e) {
-                            //    echo("Le build a échoué à cause de inspec")
-                            //}finally{
+                            } catch (Exception e) {
+                                echo("Echec de certains tests")
+                            }finally{
                                 sh "sed -i \"s/ classname='\\(.*\\)' target/ classname='\\1.${server.ip}' target/\" artifacts/${baseline.dir}-${server.ip}.xml"
-                            //}
+                            }
                         }
                     }
                 }
