@@ -35,6 +35,6 @@ Définir la liste des serveurs dans le fichier inventaires du projet sécurité.
 
 ## Exemple d'analyse
 
-![Exemple d'analyse avec le plugin digitl ocean](/docs/analyse.PNG "Exemple d'analyse avec le plugin digitl ocean")
+![Exemple d'analyse avec le plugin digitl ocean](/docs/analyse.png "Exemple d'analyse avec le plugin digitl ocean")
 
-![Exemple d'analyse avec le plugin Junit](/docs/analyse2.PNG "Exemple d'analyse avec le plugin digitl ocean")
+![Exemple d'analyse avec le plugin Junit](/docs/analyse2.png "Exemple d'analyse avec le plugin digitl ocean")
